@@ -44,7 +44,6 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   filter: drop-shadow(2px 20px 5px rgba(14, 14, 14, 0.465));
-  border: 1px solid black;
 }
 
 .illustration-desktop,  .box-illustration {
