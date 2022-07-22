@@ -90,7 +90,7 @@ summary {
   width: 100%;
 }
 
-.accordion-heading:hover {
+.remove-hover:hover {
     color: hsl(14, 88%, 65%);
 }
 
