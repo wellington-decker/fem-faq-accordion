@@ -10,6 +10,3 @@ details.forEach((detail) => {
     getChildren[0].lastElementChild.classList.toggle("flip");
   });
 });
-
-
-    

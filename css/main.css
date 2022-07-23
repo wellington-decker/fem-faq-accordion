@@ -25,35 +25,32 @@ body {
   width: 95%;
   height: 100%;
   margin: 150px auto;
-  padding: 1em;
-  background-color: white;
-  border-radius: 1em;
-  position: relative
+  background: #ffffff;
+	border-radius: 1rem;
+	padding: 1em;
+	background-image: url('images/bg-pattern-mobile.svg');
+	background-repeat: no-repeat;
+	background-position: center 0%;
+	background-size: 15rem;
 }
 
-/* .illustration {
-  width: 100%;
+.mobile-img-container {
   position: relative;
-  border: 1px solid blue;
-  filter: drop-shadow(1px 20px 2px rgba(14, 14, 14, 0.252));
-  
-} */
+}
 
 .illustration-mobile {
-  width: 100%;
-  max-width: 17rem;
-  height: auto;
-  display: block;
-  margin: 0 auto;
   position: absolute;
-  top: -22%;
-  left: 50%;
-  transform: translateX(-50%);
+	top: -8rem;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	width: 100%;
+	max-width: 15rem;
+	height: auto;
   filter: drop-shadow(1px 20px 2px rgba(26, 26, 26, 0.149));
 }
 
-.illustration-desktop,
-.box-illustration {
+.desktop-img-container {
   display: none;
 }
 
@@ -63,12 +60,8 @@ body {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 8em;
-  margin: 1em 0;
-  
+  padding-top: 7em;
+  /* margin: 1em 0; */
 }
 
 .faq-header {
@@ -128,7 +121,6 @@ hr {
   color: rgba(210, 19, 19, 0.965);
 }
 
-
 @media only screen and (min-width: 900px) {
   #container {
     width: 80%;
@@ -137,25 +129,25 @@ hr {
     justify-content: space-between;
     margin: 6rem auto;
     padding: 0 2em 0 0;
-    position: relative;
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
-    background-size: 45%;
-    background-position: -14% center;
-    position: relative;
-    
+    background-size: 53%;
+    background-position: -25% center;
   }
 
-  .illustration {
+  .desktop-img-container {
+    display: block;
     flex: 1;
     width: 60%;
     height: 45vh;
     background-image: none;
     margin: auto 0;
-    margin-left: 0; 
+    margin-left: 0;
     position: relative;
-    overflow: hidden;
+  }
 
+  .mobile-img-container {
+    display: none;
   }
 
   .illustration-desktop {
@@ -165,20 +157,15 @@ hr {
     display: block;
     position: absolute;
     margin: 0;
-    transform: translateX(-3em);
-    /* filter: drop-shadow(1px 80px 1px rgba(26, 26, 26, 0.053)); */
-  }
-
-  .illustration-mobile {
-    display: none;
+    transform: translateX(-2.7em);
   }
 
   .box-illustration {
     display: block;
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 0;
-    transform: translateX(-55%) translateY(-50%);
+    transform: translateX(-52%) translateY(-50%);
   }
 
   .content {
@@ -186,11 +173,8 @@ hr {
     width: 50%;
     padding: 0 1em 1em 1em;
     margin: 2em 3em 2em 0;
-    
   }
 
-
- 
   .faq-header {
     text-align: left;
   }
