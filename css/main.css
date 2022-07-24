@@ -26,12 +26,8 @@ body {
   height: 100%;
   margin: 150px auto;
   background: #ffffff;
-	border-radius: 1rem;
-	padding: 1em;
-	background-image: url('images/bg-pattern-mobile.svg');
-	background-repeat: no-repeat;
-	background-position: center 0%;
-	background-size: 15rem;
+  border-radius: 1rem;
+  padding: 1em;
 }
 
 .mobile-img-container {
@@ -40,13 +36,13 @@ body {
 
 .illustration-mobile {
   position: absolute;
-	top: -8rem;
-	left: 50%;
-	transform: translateX(-50%);
-	display: block;
-	width: 100%;
-	max-width: 15rem;
-	height: auto;
+  top: -8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 100%;
+  max-width: 15rem;
+  height: auto;
   filter: drop-shadow(1px 20px 2px rgba(26, 26, 26, 0.149));
 }
 
@@ -121,29 +117,50 @@ hr {
   color: rgba(210, 19, 19, 0.965);
 }
 
+@media only screen and (min-width: 425px) and (max-width: 600px){
+  #container {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px){
+  #container {
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 899px){
+  #container {
+    width: 50%;
+  }
+}
+
 @media only screen and (min-width: 900px) {
   #container {
-    width: 80%;
+    width: 90%;
     max-width: 56rem;
+    position: relative;
     display: flex;
-    justify-content: space-between;
     margin: 6rem auto;
-    padding: 0 2em 0 0;
-    background-image: url("../images/bg-pattern-desktop.svg");
-    background-repeat: no-repeat;
-    background-size: 53%;
-    background-position: -25% center;
+    padding: 2rem 1rem 2rem 0;
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-size: 45%;
+    background-position: -13% center;
+  }
+
+  .box-illustration {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 57%;
+    left: 0;
+    transform: translateX(-50%) translateY(-50%);
   }
 
   .desktop-img-container {
-    display: block;
-    flex: 1;
-    width: 60%;
-    height: 45vh;
-    background-image: none;
-    margin: auto 0;
-    margin-left: 0;
-    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
   }
 
   .mobile-img-container {
@@ -151,21 +168,11 @@ hr {
   }
 
   .illustration-desktop {
-    width: 100%;
+    position: relative;
+    top: auto;
+    left: auto;
     max-width: 25rem;
-    height: 100%;
-    display: block;
-    position: absolute;
-    margin: 0;
-    transform: translateX(-2.7em);
-  }
-
-  .box-illustration {
-    display: block;
-    position: absolute;
-    top: 65%;
-    left: 0;
-    transform: translateX(-52%) translateY(-50%);
+    transform: translateX(-4rem);
   }
 
   .content {

@@ -8,5 +8,5 @@ details.forEach((detail) => {
     let getChildren = e.target.children;
     getChildren[0].firstElementChild.classList.toggle("show");
     getChildren[0].lastElementChild.classList.toggle("flip");
-  });
+  });  
 });
