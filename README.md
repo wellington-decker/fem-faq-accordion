@@ -1,5 +1,7 @@
 # Frontend Mentor - FAQ accordion card
 
+https://wellington-decker.github.io/fem-faq-accordion/
+
 ![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
