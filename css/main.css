@@ -57,7 +57,6 @@ body {
 
 .content {
   padding-top: 7em;
-  /* margin: 1em 0; */
 }
 
 .faq-header {
@@ -117,19 +116,19 @@ hr {
   color: rgba(210, 19, 19, 0.965);
 }
 
-@media only screen and (min-width: 425px) and (max-width: 600px){
+@media only screen and (min-width: 425px) and (max-width: 600px) {
   #container {
     width: 75%;
   }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 768px){
+@media only screen and (min-width: 601px) and (max-width: 768px) {
   #container {
     width: 55%;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 899px){
+@media only screen and (min-width: 768px) and (max-width: 899px) {
   #container {
     width: 50%;
   }
